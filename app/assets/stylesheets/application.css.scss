@@ -13,7 +13,21 @@
  *= require_tree .
  *= require_self
  */
+ 
+ @import 'bootstrap';
 
 h1, h2, h3 {
     font-family: 'PT Serif', serif;
+}
+
+body, .navbar {
+    background: #1B1F22;
+}
+
+a {
+    color: white;
+    &:hover {
+        color: white;
+        opacity: .5;
+    }
 }
