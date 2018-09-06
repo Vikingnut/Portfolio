@@ -1,1 +1,25 @@
-<h2>Home page</h2>
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8"/>
+  <script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById('canvas');
+      if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        
+        ctx.beginPath();
+        ctx.moveTo(0, 75);
+        ctx.lineTo(43, 150);
+        ctx.lineTo(130, 150);
+        ctx.lineTo(173, 75);
+        ctx.lineto(130, 0);
+        ctx.lineTo(43, 0);
+        ctx.fill();
+      }
+    }
+  </script>
+ </head>
+ <body onload="draw();">
+   <canvas id="canvas" width="173" height="150"></canvas>
+ </body>
+</html>

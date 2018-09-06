@@ -16,8 +16,19 @@
  
  @import 'bootstrap';
 
-h1, h2, h3 {
+h1, h2, h3, a {
     font-family: 'PT Serif', serif;
+    color: white;
+    text-align: center;
+}
+
+.about-text {
+    font-family: 'PT Serif', serif;
+    color: white;
+}
+
+i {
+    color: white;
 }
 
 body, .navbar {
@@ -25,7 +36,6 @@ body, .navbar {
 }
 
 a {
-    color: white;
     &:hover {
         color: white;
         opacity: .5;

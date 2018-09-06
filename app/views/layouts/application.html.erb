@@ -6,13 +6,47 @@
     <link href="//fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="/path/to/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/path/to/font-awesome.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <a class="navbar-brand" href="#">Navbar</a>
-  </nav>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg" role="navigation">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <%= link_to "Home", root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About", about_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-lg fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <body>
     <%= yield %>
+    <script src="/path/to/jquery-1.10.2.js"></script>
+    <script src="/path/to/bootstrap.min.js"></script>
   </body>
 </html>
