@@ -16,18 +16,16 @@
  
  @import 'bootstrap';
 
+/* Set text color to white */
 h1, h2, h3, a {
     font-family: 'PT Serif', serif;
     color: white;
     text-align: center;
 }
 
+/* set font to PT serif */
 .about-text {
     font-family: 'PT Serif', serif;
-    color: white;
-}
-
-i {
     color: white;
 }
 
@@ -59,7 +57,7 @@ a {
 /* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-5.4px, 3.6px) ;
-    transform: rotate(-45deg) translate(-5.4px, 3.6px) ;
+    transform: rotate(-45deg) translate(-5px, 4px) ;
 }
 
 /* Fade out the second bar */
