@@ -82,11 +82,11 @@ a {
     border: 2px white;
 }
 
-.carousel {
-    width: 1000px;
+.carousel, .carousel-img {
+    width: 800px;
+    height: 800px;
     margin: 0 auto;
     margin-top: 30px;
-
 }
 
 
@@ -101,5 +101,5 @@ a {
 }
 
 .carousel-img {
-    border-radius: 50px 5px 50px 5px;
+    border-radius: 50px 15px 50px 15px;
 }
