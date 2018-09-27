@@ -82,16 +82,45 @@ a {
     border: 2px white;
 }
 
-.card-img-top:hover {
-    transition: .5s ease;
-    opacity: .5;
-    
+.card {
+    border-radius: 0;
+    border: 0;
 }
 
 .card-img-overlay {
     opacity: 0;
     &:hover {
-        transition: .5s ease;
-        opacity: 1;
+        transition: .4s ease;
+        background-color: #000;
+        opacity: .5;
     }
+}
+
+.card-tite {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    &:hover > .overlay {
+        background-color: #000;
+        opacity: .5;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.DevMatch {
+    background: #53346D;
+}
+
+.DevMatch-logo {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
 }

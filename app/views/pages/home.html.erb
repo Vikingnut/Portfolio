@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800i" rel="stylesheet">
   </head>
   <body>
     
@@ -32,8 +33,9 @@
     <!--  </div>-->
     <!--</div>-->
     
-    <div class="container">
-      <div class="card-deck">
+    <div class="container-fluid">
+      <div class="card-group">
+        
         <div class="card">
           <%= link_to about_path do %>
             <%= image_tag "garrettProfile.jpg", :alt => "Card image cap", class: "card-img-top" %>
@@ -42,16 +44,23 @@
             </div>
           <% end %>
         </div>
+        
         <div class="card">
           <%= link_to 'https://real-turnover.glitch.me/' do %>
             <%= image_tag "WhatToDo.PNG", :alt => "Card image cap", class: "card-img-top" %>
+            <div class="card-img-overlay text-white">
+              <h5 class="card-title">What To Do? - a to-do list project</h5>
+            </div>
           <% end %>
         </div>
-        <div class="card">
-          <%= link_to 'https://real-turnover.glitch.me/' do %>
-            <%= image_tag "DevMatch.PNG", :alt => "Card image cap", class: "card-img-top" %>
-          <% end %>
+        
+        <div class="card DevMatch">
+            <%= link_to 'http://still-earth-66445.herokuapp.com/', class: "DevMatch-logo" do %>
+              <i class="fas fa-users"></i>
+              DevMatch
+            <% end %>
         </div>
+        
       </div>
     </div>
     
