@@ -73,18 +73,34 @@ a {
 
 .profile-image {
     display: block;
+    margin: auto;
     width: 160px;
     height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
     border-radius: 50%;
-    border: 2px white;
+    border: 2px black;
+}
+
+.about-background {
+    background: white;
+    text-align: center;
+    padding: 200px 0px 200px 0px;
+}
+
+div.about-background h2 {
+    color: black;
+}
+
+div.about-background .offset-md-6 {
+    margin: 0;
 }
 
 .card {
     border-radius: 0;
     border: 0;
+}
+
+div.about_background h2 {
+    
 }
 
 .container-fluid {
