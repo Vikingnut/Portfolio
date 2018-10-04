@@ -16,29 +16,29 @@
  
  @import 'bootstrap';
 
-/* Set text color to white */
-h1, h2, h3, a {
-    font-family: 'PT Serif', serif;
-    color: white;
-    text-align: center;
-}
-
+/* Set overall background to dark gray color*/
 body, .navbar {
     background: #1B1F22;
 }
 
+/* Set text color in navbar to white */
 a {
-    &:hover {
+    font-family: 'PT Serif', serif;
+    color: white;
+    text-align: center;
+        &:hover {
         color: white;
         opacity: .5;
     }
 }
 
+/* hamburger nav on mobile*/
 .hamburger {
     display: inline-block;
     cursor: pointer;
 }
 
+/* styles bars in hamburger nav item*/
 .bar1, .bar2, .bar3 {
     width: 21px;
     height: 3px;
@@ -65,6 +65,7 @@ a {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+/* Styles profile image in home section */
 .profile-image {
     display: block;
     margin: auto;
@@ -74,32 +75,44 @@ a {
     border: 2px black;
 }
 
+/* Styles the background and padding of home section */
 .home-background {
     background: white;
     text-align: center;
     padding: 200px 0px 200px 0px;
 }
 
+/* Styles the text in the home section*/
 .home-text {
     font-family: 'Passion One', cursive;
     color: #3A9AFF;
     vertical-align: middle;
 }
 
+/* Positions text in home section vertically center */
 h1.home-text {
     padding-top: 58px;
 }
 
+ /* Styles the background and padding of about section */
 .about-background {
     background: #3A9AFF;
     text-align: center;
     padding: 200px 0px 200px 0px;
 }
 
+/* Styles the tect in the about section */
 .about-text {
     font-family: 'Passion One', cursive;
     color: white;
     vertical-align: center;
+    
+/* Styles background in the skills section*/
+}
+.skills-background {
+    background: white;
+    text-align: center;
+    padding: 200px 0px 200px 0px;
 }
 
 div.home-background .offset-md-6 {
