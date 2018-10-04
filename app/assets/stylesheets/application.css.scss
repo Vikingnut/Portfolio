@@ -23,12 +23,6 @@ h1, h2, h3, a {
     text-align: center;
 }
 
-/* set font to PT serif */
-.about-text {
-    font-family: 'Passion One', cursive;
-    color: #3A9AFF;
-}
-
 body, .navbar {
     background: #1B1F22;
 }
@@ -74,29 +68,47 @@ a {
 .profile-image {
     display: block;
     margin: auto;
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 2px black;
 }
 
-.about-background {
+.home-background {
     background: white;
     text-align: center;
     padding: 200px 0px 200px 0px;
 }
 
-div.about-background .offset-md-6 {
+.home-text {
+    font-family: 'Passion One', cursive;
+    color: #3A9AFF;
+    vertical-align: middle;
+}
+
+h1.home-text {
+    padding-top: 58px;
+}
+
+.about-background {
+    background: #3A9AFF;
+    text-align: center;
+    padding: 200px 0px 200px 0px;
+}
+
+.about-text {
+    font-family: 'Passion One', cursive;
+    color: white;
+    vertical-align: center;
+}
+
+div.home-background .offset-md-6 {
     margin: 0;
 }
 
 .card {
     border-radius: 0;
     border: 0;
-}
-
-div.about_background h2 {
-    
 }
 
 .container-fluid {
