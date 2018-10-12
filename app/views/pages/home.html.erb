@@ -6,9 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
   </head>
   <body>
-    
+
     <div class="container-fluid">
-      
+
       <div class="row home-background">
         <div class="col-md-4 offset-md-2 float-left" id="home">
           <h1 class="home-text">Designer and Full Stack Developer</h2>
@@ -16,31 +16,31 @@
             I design and code websites that are equal parts simple and elegant
           </h4>
         </div>
-        
+
         <div class="col-md-4 offset-md-6 float-right">
           <%= image_tag "garrettProfile.jpg", :alt => "rss feed", class: "profile-image center" %>
         </div>
       </div>
-      
+
       <div class="row about-background" id="about">
         <div class="col-md-8 offset-md-2">
           <h1 class="about-text">Hi! My name's Garrett. Nice to meet you.</h1>
         </div>
         <div class="col-md-6 offset-md-3">
           <h4 class="about-text">
-            I've been trekking down the tough but rewarding road of web development since February 
+            I've been trekking down the tough but rewarding road of web development since February
             of 2018. I have worked for the past 2 years as a data analyst, and through my work,
             have found my passion is designing websites and writing code. I am naturally curious,
             willing to take on any challenge, and have an unquenchable thirst for knowledge.
           </h4>
         </div>
       </div>
-      
+
       <div class="row skills-background">
         <div class="col-md-6 offset-md-3">
           <div class="card-group border-dark">
-            <div class="card border-dark">
-              <div class="card-body">
+            <div class="card">
+              <div class="card-body border border-dark">
                 <h5 class="card-title">Card title</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -48,8 +48,8 @@
                 <a href="#" class="card-link">Another link</a>
               </div>
             </div>
-            <div class="card border-dark">
-              <div class="card-body">
+            <div class="card">
+              <div class="card-body border border-dark">
                 <h5 class="card-title">Card title</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -57,8 +57,8 @@
                 <a href="#" class="card-link">Another link</a>
               </div>
             </div>
-            <div class="card border-dark">
-              <div class="card-body">
+            <div class="card">
+              <div class="card-body border border-dark">
                 <h5 class="card-title">Card title</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -69,19 +69,19 @@
           </div>
         </div>
       </div>
-      
+
       <div class="card-group">
-        
+
         <%= link_to 'https://real-turnover.glitch.me/', class: "card WhatToDo" do %>
           <h5 class="WhatToDo-logo"><i class="fas fa-clipboard-check"></i>What to Do?</h5>
         <% end %>
-        
+
         <%= link_to 'http://still-earth-66445.herokuapp.com/', class: "card DevMatch" do %>
           <h5 class="DevMatch-logo"><i class="fas fa-users"></i>DevMatch</h5>
         <% end %>
-        
+
       </div>
     </div>
-    
+
   </body>
 </html>

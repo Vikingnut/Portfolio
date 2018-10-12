@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
  @import 'bootstrap';
 
 /* Set overall background to dark gray color*/
@@ -106,7 +106,7 @@ h1.home-text {
     font-family: 'Passion One', cursive;
     color: white;
     vertical-align: center;
-    
+
 /* Styles background in the skills section*/
 }
 .skills-background {
@@ -115,23 +115,22 @@ h1.home-text {
     padding: 200px 0px 200px 0px;
 }
 
+/* Removes margin from elements within home div so that they can align
+horizontally*/
 div.home-background .offset-md-6 {
     margin: 0;
-}
-
-.card {
-    border-radius: 0;
-    border: 0;
 }
 
 .container-fluid {
     padding: 0;
 }
 
+/* Sets the background of the DevMatch link to purple */
 .DevMatch {
     background: #53346D;
 }
 
+/*Styles img and text for DevMatch link*/
 .DevMatch-logo {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
@@ -141,10 +140,12 @@ div.home-background .offset-md-6 {
     font-size: 28px;
 }
 
+/*Sets background of WhatToDo background to orange*/
 .WhatToDo {
     background: #fc4a1a;
 }
 
+/*Styles img and text for DevMatch link*/
 .WhatToDo-logo {
     font-family: 'Merienda', cursive;
     float: none;
