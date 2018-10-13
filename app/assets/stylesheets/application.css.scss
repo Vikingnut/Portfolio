@@ -99,6 +99,7 @@ h1.home-text {
     background: #3A9AFF;
     text-align: center;
     padding: 200px 0px 200px 0px;
+    position: absolute;
 }
 
 /* Styles the tect in the about section */
@@ -152,4 +153,45 @@ div.home-background .offset-md-6 {
     margin-top: 130px;
     margin-bottom: 130px;
     font-size: 28px;
+}
+
+.card-group {
+  margin-top: 350px;
+}
+
+.card-body i {
+    transform: scale(3);
+    color: #3A9AFF;
+    margin-top: 40px
+}
+
+.card-body h5 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.skills-card-margin {
+  margin-bottom: 60px;
+}
+
+.skills-card-margin-2 {
+  margin-bottom: 85px;
+}
+
+.card-body ul {
+  padding: 0;
+}
+.card-body li {
+  list-style-type: none;
+}
+
+.card-body-font {
+  font-family: 'Raleway', sans-serif;
+}
+
+.card-sub-title {
+  font-weight: bolder;
+  color: #3A9AFF;
+  margin-bottom: 5px;
 }
