@@ -33,9 +33,9 @@
         </div>
       </div>
 
-      <div class="row skills-background" id="skills">
+      <div class="row skills-background">
         <div class="col-md-6 offset-md-3">
-          <div class="card-group border-dark">
+          <div class="card-group border-dark" id="skills">
             <div class="card">
               <div class="card-body border-secondary">
                 <i class="fas fa-laptop-code skills-card-margin"></i>
@@ -79,15 +79,18 @@
           </div>
         </div>
       </div>
-      <div id="projects">
-        <div class="card-group project-cards">
-          <%= link_to 'https://real-turnover.glitch.me/', class: "card WhatToDo" do %>
-            <h5 class="WhatToDo-logo"><i class="fas fa-clipboard-check"></i>What to Do?</h5>
-          <% end %>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 project-cards" id="projects">
+          <h2 class="home-text">Projects</h2>
+          <div class="card-deck">
+            <%= link_to 'https://real-turnover.glitch.me/', class: "card WhatToDo project-link" do %>
+              <h5 class="WhatToDo-logo"><i class="fas fa-clipboard-check"></i>What to Do?</h5>
+            <% end %>
 
-          <%= link_to 'http://still-earth-66445.herokuapp.com/', class: "card DevMatch" do %>
-            <h5 class="DevMatch-logo"><i class="fas fa-users"></i>DevMatch</h5>
-          <% end %>
+            <%= link_to 'http://still-earth-66445.herokuapp.com/', class: "card DevMatch project-link" do %>
+              <h5 class="DevMatch-logo"><i class="fas fa-users"></i>DevMatch</h5>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
