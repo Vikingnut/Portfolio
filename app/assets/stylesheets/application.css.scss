@@ -22,7 +22,7 @@ body, .navbar {
 }
 
 /* Set text color in navbar to white */
-a {
+a.navbar-brand {
   font-family: 'Passion One', cursive;
   color: #3A9AFF;
   text-align: center;
@@ -167,7 +167,40 @@ h1.home-text {
 }
 
 .project-cards {
-  margin-top: 100px
+  margin-top: 100px;
+}
+
+.project-cards h2 {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.card-deck {
+  margin-bottom: 150px;
+  & .card {
+    display: table;
+  }
+}
+
+.project-link {
+  height: 290px;
+  &:hover {
+  text-decoration: none;
+    & > .project-card-text {
+      font-size: 34px;
+      transition: 0.3s;
+    }
+  }
+}
+
+.project-card-text {
+  display: table-cell;
+  float: none;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.3s;
 }
 
 /* Sets the background of the DevMatch link to purple */
@@ -179,11 +212,6 @@ h1.home-text {
 .DevMatch-logo {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  float: none;
-  margin-top: 130px;
-  margin-bottom: 130px;
-  font-size: 28px;
-  color: white;
 }
 
 /*Sets background of WhatToDo background to orange*/
@@ -194,18 +222,4 @@ h1.home-text {
 /*Styles img and text for DevMatch link*/
 .WhatToDo-logo {
   font-family: 'Merienda', cursive;
-  float: none;
-  margin-top: 130px;
-  margin-bottom: 130px;
-  font-size: 28px;
-  color: white;
-}
-
-.project-cards h2 {
-  font-size: 60px;
-  margin-bottom: 40px;
-}
-
-.project-link:hover {
-  text-decoration: none;
 }
