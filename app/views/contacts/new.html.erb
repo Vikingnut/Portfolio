@@ -8,7 +8,7 @@
         <%= content_tag :div, msg, class: "alert alert-#{type}" %>
       <% end %>
       <div>
-        <%= form_for "/contacts" do |f| %>
+        <%= form_for @contact do |f| %>
           <div class="form-group">
             <%= f.label :name, class: 'passion-blue' %>
             <%= f.text_field :name, class: 'form-control' %>
