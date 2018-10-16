@@ -21,10 +21,13 @@ body, .navbar {
   background: white;
 }
 
-/* Set text color in navbar to white */
-a.navbar-brand {
+.passion-blue {
   font-family: 'Passion One', cursive;
   color: #3A9AFF;
+}
+
+/* Set text color in navbar to white */
+a.navbar-brand, a.nav-link {
   text-align: center;
       &:hover {
       color: #3A9AFF;
@@ -84,8 +87,6 @@ a.navbar-brand {
 
 /* Styles the text in the home section*/
 .home-text {
-  font-family: 'Passion One', cursive;
-  color: #3A9AFF;
   vertical-align: middle;
   text-align: center;
 }
@@ -222,4 +223,13 @@ h1.home-text {
 /*Styles img and text for DevMatch link*/
 .WhatToDo-logo {
   font-family: 'Merienda', cursive;
+}
+
+.contact-title {
+  font-size: 50px;
+  margin: 30px 0px 30px 0px;
+}
+
+label {
+  font-size: 22px;
 }

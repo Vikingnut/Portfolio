@@ -1,0 +1,29 @@
+<div class="container">
+  <div>
+    <h3 class="text-center passion-blue contact-title">What can I do for you?</h3>
+  </div>
+  <div>
+    <div class="col-md-4 offset-md-4 text-left">
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
+      <div>
+        <%= form_for "/contacts" do |f| %>
+          <div class="form-group">
+            <%= f.label :name, class: 'passion-blue' %>
+            <%= f.text_field :name, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :email, class: 'passion-blue' %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :comments, class: 'passion-blue' %>
+            <%= f.text_area :comments, class: 'form-control' %>
+          </div>
+          <%= f.submit 'Submit', class: 'btn btn-primary' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
